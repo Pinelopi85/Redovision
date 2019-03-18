@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+	<head> <meta charset="UTF-8">
+		<title>Redovision │ Redovisningstjänster</title>
+		<link rel="stylesheet" type="text/css" href="stil.css">
+		<meta name="description" content="redovisningstjänster">
+		<meta name="keywords" content="bokföring, löneadministration, ekonomistyrning">
+		<meta name="viewport" content="width=device-width">
+	</head>
+
+			<body>
+	
+	<header> 
+		<div class="container">
+			<div id="company">
+				<h1>Redovision</h1>
+				<img src="Redovision_logo1.png" alt="square logo" width="50" height="50"/>
+				<h2>Redovisningstjänster</h2>
+			</div>
+				
+			<nav> 
+				<ul>
+					<li> <a href="Index.html">Hemsida</a></li>
+					<li> <a href="Om_Redovision.html">Om Redovision</a></li>
+					<li> <a href="Hitta_konsult.html">Hitta en konsult</a></li>
+					<li> <a href="Bli_konsult.html">Jobba hos oss</a></li>
+					<li> <a href="Kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>	
+	
+	<div class="container">
+		<section id="workteam">
+				<h2>Jobba hos oss</h2>
+				<p>Bli del av vårt arbetsteam om du tycker att du kan bidra till vår verksamhet och leverera tjänster av hög kvalitet till våra kunder, hör gärna av dig till oss. Fyll i förmularet nedan, ange utbildning och skriv en kort presentation av din arbetsprofil. Nästa steget är att vänta på återkoppling från våra medarbetare på HR avdelningen.</p>
+				
+				<img src="konsult.png" alt="person" width="140" height="90" >
+		</section>
+	</div>
+			<div class="container">
+				<form id="consultant"  action="Tack_mejlet.html"  method="post" onsubmit="return validation()">
+				
+				<h3>Bli konsult </h3>
+			
+					Namn<br> <!--line break-->
+					<input type="text" name="Namn" placeholder="ange namn" id="Namn"><br>
+					<p id="invalid_1"></p>
+		
+					Efternamn<br>
+					<input type="text" name="Efternamn" placeholder="ange efternamn" id="Efternamn"><br>
+					<p id="invalid_2"></p>
+		
+					Utbilding<br>
+					<input type="text" name="Utbilding" placeholder="ange utbildning" id="Utbildning"><br>
+					<p id="invalid_3"></p>
+				
+					Arbetsprofil<br> 
+					<input type="text" name="Arbetsprofil" placeholder="800 tecken" maxlength="800" id="Arbetsprofil"><br>
+					<p id="invalid_4"></p>
+				
+					Personnummer<br>
+					<input type="text" name="Personnummer" placeholder="ÅÅMMDDXXXX" maxlength="10" id="Personnummer"><br>
+					<p id="invalid_5"></p>
+		
+		
+					email<br>
+					<input id="post" type="text" name="email" placeholder="ange email" id="email"><br>
+					<p id="invalid_6"></p>
+				
+		
+					<button type="submit" class="button">Skicka</button><br>
+				
+				</form>
+			</div>
+			
+				
+				
+				
+				<script type="text/javascript">
+				
+				var invalid=0;
+				
+				function validation() {
+				invalid=0;
+				
+				//Namn
+				if (document.getElementById("Namn").value =="") {
+				 document.getElementById("invalid_1").innerHTML="Namnsfältet är tomt";
+				 invalid +=1 ;
+				 }
+				else{
+				document.getElementById("invalid_1").innerHTML="";
+				}
+				 
+				 //Efternamn
+				 if (document.getElementById("Efternamn").value =="") {
+				 document.getElementById("invalid_2").innerHTML="Efternamnsfältet är tomt";
+				 invalid +=1 ;
+				 }
+				else{
+				document.getElementById("invalid_2").innerHTML="";
+				}
+				 
+				 //Utbildning
+				 if (document.getElementById("Utbildning").value =="") {
+				 document.getElementById("invalid_3").innerHTML="Utbildningsfältet är tomt";
+				 invalid +=1 ;
+				 }
+				else {
+				document.getElementById("invalid_3").innerHTML="";
+				}
+				
+				//Arbetsprofil
+				 if (document.getElementById("Arbetsprofil").value =="") {
+				 document.getElementById("invalid_4").innerHTML="Arbetsprofilsfältet är tomt";
+				 invalid +=1 ;
+				 }
+				else {
+				document.getElementById("invalid_4").innerHTML="";
+				}
+						
+				//Personnummer
+				 if (document.getElementById("Personnummer").value.length < 10) {
+				 document.getElementById("invalid_5").innerHTML="Personnumret är ej korrekt";
+				 invalid +=1 ;
+				 }
+				else {
+				document.getElementById("invalid_5").innerHTML="";
+				}
+				
+				//email
+				 if (document.getElementById("post").value.indexOf("@")==-1){
+				 document.getElementById("invalid_6").innerHTML="Mejlet har ej korrekt form";
+				 invalid +=1 ;
+				 }
+				else {
+				document.getElementById("invalid_6").innerHTML="";
+				}
+				
+				 
+				 if (invalid !=0) {
+				 return false;
+				 }
+				 else{
+				 return true;
+				 }
+				 }
+				</script>
+			
+	
+	<footer>
+		<div class="container">
+			<div id="information">
+				<p>Redovision&copy;2018 <br> Öppetider: kl. 09-17 mån-fre <br> </p>
+			</div>
+		</div>
+	</footer>
+	
+	</body>
+	
+</html>

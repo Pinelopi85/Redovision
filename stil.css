@@ -1,0 +1,419 @@
+/*CSS till Redovision projektet*/
+
+
+body{ 
+	font-size:17px;
+	font-family:sans-serif,verdana,times new roman; /* flera skrifter i fall det första valet misslyckas bli laddad på någon webbläsare*/
+	line-height:20px;
+	letter-spacing:2px;
+	background-color:#d9d9d9;
+}
+	
+/*allmänt*/
+.container{
+	margin:0 auto; 
+	width:70%; /*relativ bredd-->responsiv*/
+	overflow:auto;
+}
+
+/*formulär*/
+
+.button{
+	color:#660000;
+	background-color:#666666;
+	padding:3px 5px 5px 3px;
+	margin-top:5px;
+	font-weight:bold;
+	float:right;
+}
+
+
+/*header A */
+
+header{
+	background:#595959;
+	padding-bottom:5px;
+	padding-top:15px;
+	min-height:40%; /*för att headern skulle kunna anpassa sig till olika skärmar*/
+	border-bottom:2px;
+	border-bottom-style:solid;
+	border-bottom-color:#b30000;
+}
+
+header a{
+	text-decoration:none;
+	color:#1a0000;
+	font-weight:bold;
+	font-size:18px;
+}
+
+/*för att ta bort default lista padding och margin*/
+nav ul{ 
+	padding:0;
+	margin:0;
+}
+
+/*för att skapa en horizontal nav-bar*/
+header li{
+	display:inline; 
+	padding: 5px 20px 20px 5px;
+	float:left;
+}
+
+/*för att byta navs färg*/
+header a{   
+	color:#660000;
+	font-weight:bold;
+}
+
+/*för att få annan färg när markören hövras över nav menyn*/
+header a:hover{ 
+	color:#999999;
+}
+
+
+header #company h1{
+	font-weight:bold;
+	font-size:45px;
+	float:left;
+	padding-bottom:20px;
+	color:#4d0000;
+	text-shadow:2px 2px #a6a6a6;
+}
+
+header #company h2{
+	font-size:22px;
+	color:#a6a6a6;
+	text-shadow: 1.5px 1.5px #4d0000;
+}
+
+header nav{
+	float:right;
+	margin:0 auto;
+	min-height:10%;
+}
+
+.container img{
+	padding-bottom:15px;
+	padding-right:15px;
+	padding-left: 15px;
+}
+/*header Ö*/	
+
+/*content A*/
+
+/*content Ö*/
+
+/*section A*/
+
+section{
+	background-image:url("accounting1.jpg");
+}
+
+	/*section hemsida A*/
+
+
+section img{
+float:right;
+}
+
+section{
+	margin-top:10px;
+	float:left;
+    padding:20px;
+    width:40%;
+    background-color: #f1f1f1;
+	margin:0 auto; 
+}
+	
+#summary h2{
+	font-size:20px;
+	color:#4d0000;
+	text-align:left;
+}
+
+#summary p{
+	font:15px;
+	text-align:left;
+	font-weight:bold;
+	color:#1f1f14;
+}
+
+#summary img{
+	float:right;
+}
+#summary{
+height:450px;
+width:600px;	
+}
+#clients h2{
+	font-size:20px;
+	color:#4d0000;
+	text-align:right;
+}
+
+#clients ul li{
+	list-style:none;
+	font-weight:bold;
+	font:15px;
+	color:#1f1f14;
+	text-align:right;
+}
+
+#clients{
+	text-align:right;
+	padding-bottom:20px;
+}
+
+/*section hemsida Ö*/
+
+/*section om redovisning A*/
+#about h2{
+	font-size:20px;
+	color:#4d0000;
+	text-align:left;
+}
+
+#about p{
+	font:15px;
+	text-align:left;
+	font-weight:bold;
+	color:#1f1f14;
+}
+
+#about ul li{
+	list-style:none;
+	font-weight:bold;
+	font:20px;
+	color:#1f1f14;
+}
+
+#about img{
+	float:right;
+}
+
+#about{
+	height:450px;
+	width:600px;
+}
+	
+/*section om redovisning Ö/
+
+
+/*section hitta konsult A*/
+
+#companies h2{
+	font-size:20px;
+	color:#4d0000;
+	text-align:left;
+}
+
+#companies p{
+	font:15px;
+	text-align:left;
+	font-weight:bold;
+	color:#1f1f14;
+}
+
+#companies img{
+	float:right;
+}
+
+#businesses form {
+	position:fixed;
+	float:right;
+	font:10px;
+	font-weight:bold;
+	width:10%;
+	top:0;
+	right:0;
+	
+}
+
+#companies{
+	height:450px;
+	width:600px;
+}
+
+
+#businesses {
+	color:#1f1f14;
+	font-weight:bold;
+	padding:6px;
+	padding-bottom:20px;
+	letter-spacing:1px;
+	border:4px;
+	border-style:solid;
+	border-color:#660000;
+	margin-bottom:20px;
+	background-color:#a6a6a6;
+	position:fixed;
+	font:10px;
+	font-weight:bold;
+	width:15%;
+	height:0 auto;
+	top:0;
+	right:0;
+}
+
+/*section hitta konsult Ö*/
+
+/*section bli konsult A*/
+
+/*formulär konsult*/
+
+#consultant{
+	color:#1f1f14;
+	font-weight:bold;
+	padding:6px;
+	padding-bottom:20px;
+	letter-spacing:1px;
+	border:4px;
+	border-style:solid;
+	border-color:#660000;
+	margin-bottom:20px;
+	background-color:#a6a6a6;
+	position:fixed;
+	font:10px;
+	font-weight:bold;
+	width:15%;
+	height:0 auto;
+	top:0;
+	right:0;
+}
+
+ /*bli konsult textrutan 800tecekn*/
+#Arbetsprofil{
+	height:120px;
+	width:200px;
+	text-align:left;
+}
+	
+#workteam h2{
+	font-size:20px;
+	color:#4d0000;
+	text-align:left;
+}
+
+#workteam p{
+	font:15px;
+	text-align:left;
+	font-weight:bold;
+	color:#1f1f14;
+}
+
+#consultant form{
+	float:right;
+	font:10px;
+	font-weight:bold;
+	width:10%;
+}
+
+#workteam img{
+	float:right;
+}
+
+#workteam{
+	float:left;
+	height:450px;
+	width:600px;
+}
+/*section bli konsult Ö*/
+
+/*section kontakt A*/
+
+#epost{
+text-decoration:underline;
+padding-top:1px;
+}
+
+#contact h2{
+	font-size:16px;
+	color:#4d0000;
+	text-align:left;
+	font-weight:bold;
+	padding-top:15px;
+}
+
+#contact p{
+	font:5px;
+	text-align:left;
+	font-weight:bold;
+	color:#1a0000;
+	padding:0px;
+}
+
+#contact{
+	height:450px;
+	width:600px;
+}
+
+#findus h3{
+	text-align:right;
+	font:12px;
+	color:#737373;
+}
+
+#findus p{
+	text-align:right;
+	font:10px;
+	font-weight:bold;
+	color:#1a0000;
+}
+
+/*section kontakt Ö*/
+
+/*section Ö/
+
+/*footer A*/
+
+footer{
+	background:#666666;
+	padding-bottom:20px;
+	padding-top:20px;
+	padding-left:7px;
+	padding-right:7px;
+	min-height:10%; /*för att footer skulle kunna anpassa sig till olika skärmar*/
+	width:100%;
+	border-top:4px;
+	border-top-color:#800000;
+	border-top-style:solid;
+	border-bottom: 0px;
+	text-decoration:none;
+	margin:0 auto;
+}
+
+#information{
+	text-align:left;
+	font-weight: bold;
+	color:#660000;
+}
+
+/*footer Ö*/
+
+
+/*formulär validering*/
+
+#invalid_1{
+	color:#cc0000;
+	
+}
+	
+#invalid_2{
+	color:#cc0000;
+
+}
+#invalid_3{
+	color:#cc0000;
+
+}
+#invalid_4{
+	color:#cc0000;
+}
+#invalid_5{
+	color:#cc0000;
+
+}
+#invalid_6{
+	color:#cc0000;
+}
